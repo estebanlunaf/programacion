@@ -1,0 +1,33 @@
+c++-----
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+using namespace std;
+
+
+void main ()
+{ int a,b,aux;
+  cin>> a;
+  cin>>b;
+  aux=a;
+  a=b;
+  b=aux;
+  cout<< "El valor de A es:"<<a<<endl;
+  cout<< "El valor de b es:"<<b<<endl;
+
+	getch ();
+}
+
+Pseudocodigo------
+
+Proceso sin_titulo
+	Leer A
+	Leer B
+	aux<-A
+	A<-B
+	B<-aux
+	Escribir "El valor de a es:",A
+	Escribir "El valor e b es:",B
+FinProceso
+
