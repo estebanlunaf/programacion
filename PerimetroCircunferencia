@@ -1,0 +1,38 @@
+c++-------
+// PerimetroCircunferenica.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+using namespace std;
+
+
+void main ()
+{ float radio,area,perimetro;
+  cout<<"escribir el radio de la circunferencia";
+  cin>>radio;
+  area=3.1416*radio*radio;
+  cout<<"el area de la circunferencia:";
+  cout<<area<<endl;
+  perimetro=2*3.1416*radio;
+  cout<<"el perimetro de la circunferencia es:";
+  cout<<perimetro;
+
+	getch ();
+}
+
+Pseudocodigo------
+
+Proceso PerimetroCircunferencia
+	Escribir "escribir el radio de la circunferencia:"
+	Leer radio
+	area<-3.1416*radio*radio
+	Escribir "area de la circunferencia:"
+	Escribir area
+	perimetro<-3.1416*2*radio
+	Escribir "perimetro de la circunferencia"
+	Escribir perimetro
+FinProceso
+
