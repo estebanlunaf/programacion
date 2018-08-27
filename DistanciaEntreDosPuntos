@@ -1,0 +1,47 @@
+C++--------
+// DistanciaEntre2Puntos.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+ int main()
+   {             
+
+   float x1, x2, y1, y2, distancia;
+   
+   cout <<"Distancia entre dos puntos en el plano cartesiano. "<<endl;
+   cout <<"Introduzca las coordenadas del primer punto: "<<endl;
+   cin >> x1 >>  y1;
+
+   cout <<"Introduzca las coordenadas del segundo punto: " <<endl;
+   cin >> x2 >>  y2;
+
+   distancia = sqrt((x2 - x1)*(x2 - x1 ) + (y2 - y1)*(y2 - y1));
+
+   cout <<"La distancia entre los puntos es: " <<distancia << endl;
+
+   getch();
+   
+   } 
+   
+   Pseudocodigo---------
+   
+   Algoritmo DistanciaEntre2Puntos
+	Definir xP1,yP1,xP2,yP2 como enteros
+	Definir distancia Como Real
+	Escribir "Ingrese abscisa 1:"
+	leer xP1
+	escribir "Ingrese ordenada 1:"
+	leer yP1
+	Escribir "Ingrese abscisa 2:"
+	leer xP2
+	escribir "Ingrese ordenada 2:"
+	leer yP2
+	distancia<-RC((xP2-xP1)^2+(yP2-yP1)^2)
+	escribir "La distancia es de:", distancia
+FinAlgoritmo
