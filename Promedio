@@ -1,0 +1,46 @@
+C++-----
+// Promedio.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+using namespace std ;
+float numero,contador=0,suma, promedio;
+int main ()
+{
+cout<<"Ingrese los numeros y para finalizar ingrese el 0, ";
+cout << "ingrse el numero: " ;
+cin >> numero;
+while (numero != 0)
+
+{
+suma= suma + numero; 
+contador=contador+1 ; 
+cout << "ingrse el numero: " ;
+cin >> numero;
+}
+
+promedio= suma / contador;
+cout<< "el promedio es: "<< promedio;
+getch();
+} 
+
+Pseudocodigo-------
+Algoritmo Promedio
+	Escribir "Ingrese la cantidad de datos:"
+    Leer n
+    
+    acum<-0
+    
+    Para i<-1 Hasta n Hacer
+        Escribir "Ingrese el dato ",i,":"
+        Leer dato
+        acum<-acum+dato
+    FinPara
+    
+    prom<-acum/n
+    
+    Escribir "El promedio es: ",prom
+	
+FinAlgoritmo
