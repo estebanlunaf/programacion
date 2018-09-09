@@ -1,0 +1,26 @@
+// Camisas.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{ int salariobruto, salarioneto, salariominimo=2060;
+  char resp;
+  do {
+	  cout<<"Ingresar salario bruto: ";
+	  cin>>salariobruto;
+	  if (salariobruto>=4*salariominimo)
+		  salarioneto=salariobruto-0.251*salariobruto;
+	  else
+		  salarioneto=salariobruto-0.121*salariobruto;
+	  cout<<"El salario neto es: "<<salarioneto ;
+	  cout<<"Desea continuar: ";
+	  cin>>resp;
+  }while(resp=='s');
+  
+	getch();
+}
