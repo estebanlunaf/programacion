@@ -1,0 +1,19 @@
+// sumadepares.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+void main()
+{ int n, i, num=0, suma=0;
+  cout<<"Ingrese cantidad de pares a sumar: ";
+  cin>>n;
+  for(i=0; i<n; i=i++)
+  { num=num+2;
+    suma=suma+num;
+	}
+  cout<<"La suma es: "<<suma;
+	getch();
+}
