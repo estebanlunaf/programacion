@@ -1,0 +1,55 @@
+// Menu3Areas.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+float cuadrado(float L);
+float triangulo(float B, float H);
+float circulo(float R);
+
+void main()
+{ float opcion, L, B,H, R;
+  do{
+	  cout<<"1. Area de un cuadrado"<<endl;
+	  cout<<"2. Area de un triangulo"<<endl;
+	  cout<<"3. Area de un circulo"<<endl;
+	  cout<<"0. Salir"<<endl;
+	  cout<<"Elija una opcion: "<<endl;
+	  cin>>opcion;
+
+	  switch (opcion)
+	  {
+	  case 0: cout<<"Saliendo"<<endl;
+	  case 1:cout<<"Ingrese l: "<<endl;
+		     cin>>L;
+             cout<<"El area es: "<<cuadrado(L);break;
+	  case 2:cout<<"Ingrese base y altura"<<endl;
+		     cin>>B;
+			 cin>>H;
+			 cout<<"El area es: "<<triangulo(B,H);break;
+	  case 3:cout<<"Ingrese el radio: "<<endl;
+		     cin>>R;
+			 cout<<"El area es: "<<circulo(R);break;
+	  default: cout<<"opcion no valida"<<endl;}
+  }
+	while (opcion!=0);
+	getch();
+}
+ float cuadrado(float L)
+ { float area1;
+   area1=L*L;
+   return area1;
+ }
+ float triangulo(float B, float H)
+ { float area2=(B*H)/2;
+   return area2;
+ }
+ float circulo(float R)
+ { float area3;
+   area3=3.141592*R*R;
+   return area3;
+ }
