@@ -1,4 +1,4 @@
-// PasoVariablesReferencia2.cpp : Defines the entry point for the console application.
+// PasoVariablesReferencia.cpp : Defines the entry point for the console application.
 //
 
 #include "stdafx.h"
@@ -22,15 +22,15 @@ void main()
 	    cout<<"Raiz 1:"<<valor1<<endl;
 		cout<<"Raiz 2:"<<valor2<<endl;
 	}
-	if (d<0)
-	{  reales(a,b,c,valor1,valor2);
-	    cout<<"Raiz imaginaria 1:"<<valor1<<endl;
-		cout<<"Raiz imaginaria 2:"<<valor2<<endl;
-	}
-	if (d=0)
-	{ reales(a,b,c,valor1,valor2);
-	    cout<<"Raiz unica:"<<valor1<<endl;
-	}
+	  if (d<0)
+	  {  reales(a,b,c,valor1,valor2);
+	     cout<<"Raiz imaginaria 1:"<<valor1<<endl;
+		 cout<<"Raiz imaginaria 2:"<<valor2<<endl;
+	  }
+            if (d=0)
+	     {  reales(a,b,c,valor1,valor2);
+	       cout<<"Raiz unica:"<<valor1<<endl;
+	     }
 	getch();
 }
 
