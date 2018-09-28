@@ -29,7 +29,7 @@ void main()
 	}
 	if (d=0)
 	{ reales(a,b,c,valor1,valor2);
-	    cout<<"Raiz 1:"<<valor1<<endl;
+	    cout<<"Raiz unica:"<<valor1<<endl;
 	}
 	getch();
 }
