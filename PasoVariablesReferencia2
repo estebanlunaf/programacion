@@ -27,7 +27,7 @@ void main()
 	     cout<<"Raiz imaginaria 1:"<<valor1<<endl;
 		 cout<<"Raiz imaginaria 2:"<<valor2<<endl;
 	  }
-            if (d=0)
+            if (d==0)
 	     {  reales(a,b,c,valor1,valor2);
 	       cout<<"Raiz unica:"<<valor1<<endl;
 	     }
