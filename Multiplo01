@@ -1,0 +1,39 @@
+// Multiplo01.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int Multiplo(int a, int b);
+
+void main()
+{
+	int a, b, Estatus;
+	cout<<"Ingresar primer valor: "<<endl;
+	cin>>a;
+	cout<<"Ingresar segundo valor: "<<endl;
+	cin>>b;
+
+	Estatus=Multiplo(a, b);
+	cout<<"El Estatus es: "<<Estatus;
+	getch();
+}
+
+int Multiplo(int a, int b)
+{
+	int n;
+	if (a>=b){
+		if(a%b==0){
+			n=1;}
+		else
+		n=0;}
+	if(b>=a){
+		if(b%a==0){
+			n=1;}
+		else
+		n=0;}
+      return n;
+}
