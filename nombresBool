@@ -1,0 +1,25 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include <string>
+#define MAX 100
+using namespace std;
+
+void cargar (string nombre[], int tam);
+void mostrar (string nombre[], int tam);
+void ordenar (string nombre[], int tam);
+bool buscar (string nombre[], int tam, string elem);
+
+void main()
+{
+	string nombre[MAX], elemento;
+	int tam;
+	cargar( nombre, tam);
+	ordenar( nombre, tam);
+	cout<<"Que nombre desea buscar?";
+	getline(cin, elemento);
+	if (buscar(nombre, tam, elemento))
+		cout<<"Esta en la lista";
+	    
+	getch();
+}
