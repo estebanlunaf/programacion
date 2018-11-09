@@ -1,0 +1,29 @@
+// examenPractico.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include <string>
+using namespace std;
+
+bool palindromo (string nombre);
+
+void main()
+{
+	string nombre;
+	cout<<"Ingrese la frase: ";
+	getline(cin, nombre);
+	palindromo (nombre);
+
+	getch();}
+
+bool palindromo (string nombre){
+	bool r=true;
+	int longitud=nombre.length();
+	for(int i=0; i<longitud/2; i++){
+		if(nombre.at(i)!=nombre.at(longitud-1-i))
+			return false;
+
+		    return r;}
+}
