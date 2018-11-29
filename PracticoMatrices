@@ -1,0 +1,104 @@
+//Ejercicio 1
+void suma(int matriz[fil][col], int n,int m, V[])
+{ int s=0,i, j;
+ for (int i=0; i<n;i++)
+  s=0;
+ for(int j=0; j<m; j++)
+	 s=s+matriz[i][j];
+  V[i]=s;}
+}
+
+//Ejercicio 2
+int mayor(int matrix[MAXROW][MAXCOL], int n, int m)
+{ int tmayor, i, j;
+  tmayor=matrix[0][0];
+   for(i=0;i<n;i++)
+	   for(j=0; j<m;j++)
+	   { if (+mayor<matrix[i][j])
+	       tmayor=matrix[i][j];
+	   }
+	   return tmayor;
+}
+int menor (int matrix[MAXROW][MAXCOL], int n, int m)
+{ int tmenor, i,j;
+  tmenor=matrix[0][0];
+  for (i=0; i<n; i++)
+  { if(tmenor>matrix[i][j])
+     tmenor=matrix[i][j];
+  }
+  return tmenor;
+}
+
+//Ejercicio 4
+void sumar( float A[MAXF][MAXC], float B[MAXF][MAXC], float C [MAXF]MAXC], int N)
+{ for(int i=0, i<N, i++){
+	for(int j=0, j<N, j++)
+	{ C[i][j]=A[i][j]+B[i][j];}
+}
+}
+
+
+
+//Ejercicio 5
+void multiplicar(double M[fil][col], int f,int c)
+{ double M2[fil][col], R[fil][col];
+  int f2, c2, Mul, suma=0;
+  f2=c;
+  cout<<"Ingresar tam de colum de la segunda matriz: ";
+  cin>>c2;
+  cout<<endl;
+  cargar (M2, f2, c2);
+  for ( int i=0; i<f; i++){
+	  for(int j=0; j<c2;j++)
+	  { Mul=M[i][j]*M2[j][i];
+	    suma=suma+Mul;
+	  }
+	  R[i][j]=suma;
+  }
+}
+
+
+//Ejercicio 8
+void inter( int V[F][C], int aux, int n, int F, int F2)
+{ for (int i=0; i<n; i++){
+	aux= V[F1-1][i]
+	V[F1-1][i]=V[F2-1][j];
+	V[F2-1][i]=Aux;}}
+void mostrar( int V[F][C], int n)
+{ for (int i=0; i<n; i++){
+	for(int j=0;j<n;j++){
+		cout<<V[i][j]<<"\";
+			cout<<endl;
+	}
+}
+}
+
+//Ejercicio 9
+void ej9 (double M [fila] [col], f)
+{ int Mayor=M[0] [0];
+  for(int; j=0;; j<f; j++)
+  { if (Mayor<M[j][j])
+   Mayor=M[j][j]
+  }
+  cout <<Mayor;
+}
+
+
+
+
+
+//Ejercicio 10
+void sumar( int mat[MAX][MAX], int tam)
+{ int suma1=0, sumaz=0, sumat;
+for (int i=0; i<tam; i++)
+for (int j=0; j<tam; j++)
+	if(i==j)
+		suma1=suma1+mat[i][j];
+for(int fil=0; fil<tam; fil++)
+for(int col=0; col<tam; col++)
+	if (col==tam-fil)
+		suma2=suma2+mat[fil][col];
+sumat=suma1+suma2;
+cout<<"La suma de las diagonales es:";
+cout<<sumat;
+}
