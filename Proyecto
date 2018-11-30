@@ -1,0 +1,40 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void lecturacontrasenha( int c);
+
+void main()
+{
+	int pin=231,c;
+	cout<<"Ingrese pin:"<<endl;
+	cin>>c;
+	if (c==pin)
+		lecturacontrasenha( c);
+	else
+		cout<<"Pin incorrecto"<<endl;
+	    
+	getch();
+}
+
+void lecturacontrasenha( int c)
+{
+	int opcion;
+	cout<<"----Opciones----"<<endl;
+	cout<<"1.Obtener numero de cuenta"<<endl;
+	cout<<"2.Obtener saldo"<<endl;
+	cout<<"3.Obtener nombre de titulares de cuenta"<<endl;
+	cout<<"0. Salir"<<endl;
+	cout<<"Ingrese opcion:"<<endl;
+	cin>>opcion;
+
+	switch (opcion){
+	    case 0:cout<<"Saliendo"; break;
+		case 1: cout<<"30557"; break;
+		case 2: cout<<"50.782 bs"; break;
+		case 3: cout<<"Maria Gomez, Ricardo Gomez";break;
+		default: cout<<"Opcion no valida";}
+	getch();
+}
