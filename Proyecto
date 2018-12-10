@@ -217,7 +217,7 @@ void actualizarcuenta(string ci, float pin, string nom, float saldonuevo){
 }
 
 //Este programa funciona con archivos, por lo tanto compila cuando tenemos guardada la informacion de las cuentas en documentos de texto, estas estan en esta misma cuenta
-  de github con el nombre de cuenta 0001 , 0002 , 0003, 0004 , 0005
+// de github como: 0001.cuenta , 0002.cuenta , 0003.cuenta, 0004.cuenta , 0005.cuenta , sus respectivos pin estan en los ducumentos de texto
 
 
 
